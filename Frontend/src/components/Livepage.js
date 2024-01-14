@@ -66,7 +66,7 @@ const Livepage = () => {
               {videos.map((video) => (
                 <Grid item key={video.title}>
                   <ReactPlayer
-                    url="https://youtu.be/YRBmZIDqSrc?feature=shared"
+                    url={video.videoUrl}
                     height="100%"
                     width="100%"
                     controls
