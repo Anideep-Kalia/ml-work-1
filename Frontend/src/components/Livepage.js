@@ -65,9 +65,12 @@ const Livepage = () => {
             <Grid container style={LivePage_style} spacing={2}>
               {videos.map((video) => (
                 <Grid item key={video.title}>
-                  <video src={video.videoUrl}></video>
-                  <h4>{video .title}</h4>
-                  <p>{video.description}</p>
+                  <ReactPlayer
+                    url="https://youtu.be/YRBmZIDqSrc?feature=shared"
+                    height="100%"
+                    width="100%"
+                    controls
+                  />
                 </Grid>
               ))}
             </Grid>
